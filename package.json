@@ -4,7 +4,7 @@
   "description": "A chat app built with the PERN (PostgresSQL, Express.js, React.js, Node.js) stack",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch backend/src --exec \"node --loader ts-node/esm\" backend/src/index.ts"
+    "dev": "nodemon --watch backend/src --exec \"node --no-deprecation --import ./loader.mjs\" backend/src/index.ts"
   },
   "repository": {
     "type": "git",

@@ -16,3 +16,7 @@ app.use("/api/messages", messageRoutes);
 app.listen(7000, () => {
     console.log("Server is running on port 7000");
 });
+
+// Todo: Add socket.io to the server
+// Todo: Configure this server for deployment
+
