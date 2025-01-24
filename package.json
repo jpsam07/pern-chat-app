@@ -4,7 +4,7 @@
   "description": "A chat app built with the PERN (PostgresSQL, Express.js, React.js, Node.js) stack",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon --watch backend/src --exec \"node --no-deprecation --import ./loader.mjs\" backend/src/index.ts"
+    "dev": "nodemon --watch backend/src --exec \"node --loader ts-node/esm\" backend/src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -19,13 +19,21 @@
   },
   "homepage": "https://github.com/jpsam07/pern-chat-app#readme",
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/express": "^5.0.0",
+    "@types/jsonwebtoken": "^9.0.8",
     "nodemon": "^3.1.9",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   },
   "dependencies": {
+    "@prisma/client": "^6.2.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "pern-chat-app": "file:"
+    "jsonwebtoken": "^9.0.2",
+    "pern-chat-app": "file:",
+    "prisma": "^6.2.1"
   }
 }
