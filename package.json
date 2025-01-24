@@ -1,0 +1,31 @@
+{
+  "name": "pern-chat-app",
+  "version": "1.0.0",
+  "description": "A chat app built with the PERN (PostgresSQL, Express.js, React.js, Node.js) stack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch backend/src --exec \"node --no-deprecation --import ./loader.mjs\" backend/src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpsam07/pern-chat-app.git"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpsam07/pern-chat-app/issues"
+  },
+  "homepage": "https://github.com/jpsam07/pern-chat-app#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "pern-chat-app": "file:"
+  }
+}
